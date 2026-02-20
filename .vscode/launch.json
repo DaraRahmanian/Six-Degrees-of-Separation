@@ -1,0 +1,30 @@
+{
+    "version": "0.2.0",
+    "configurations": 
+    [
+        {
+            "name": "Debug main",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/main",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "build main"
+	    "environment": [],
+            "externalConsole": true,
+            "MIMode": "lldb"
+        },
+        {
+            "name": "Debug tests",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/tests/tests",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "build tests"
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "lldb"
+        }
+    ]
+}
